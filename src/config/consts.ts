@@ -10,6 +10,7 @@ export enum CryptoCode {
   TRX = 'TRX',
   USDT_TRON = 'USDT_TRON',
   LN = 'LN',
+  WLD = 'WLD',
 }
 
 export const COINS = CryptoCode /* Keep COINS for backwards compat */
@@ -75,6 +76,29 @@ const CRYPTOS = [
       mili: {
         displayScale: 5,
         displayCode: 'mDASH'
+      }
+    }
+  },
+  {
+    cryptoCode: CryptoCode.WLD,
+    display: 'Worldcoin',
+    code: 'worldcoin',
+    configFile: 'wld.conf',
+    contractAddress: '0x2cFc85d8E48F8EAB294be644d9E25C3030863003',
+    testnetContractAddress: '0x2cFc85d8E48F8EAB294be644d9E25C3030863003',
+    defaultPort: 8545,
+    unitScale: 18,
+    zeroConf: false,
+    hideFromInstall: true,
+    type: 'erc-20',
+    units:{
+      full: {
+        displayScale: 18,
+        displayCode: 'WLD'
+      },
+      mili: {
+        displayScale: 15,
+        displayCode: 'mWLD'
       }
     }
   },
