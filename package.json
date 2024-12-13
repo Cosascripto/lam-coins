@@ -1,5 +1,5 @@
 {
-  "name": "@cosascripto/lamassucoins",
+  "name": "cosascripto_lamassucoins",
   "version": "v1.0.0",
   "dependencies": {
     "@lamassu/bolt11": "1.5.1",
