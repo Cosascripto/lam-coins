@@ -68,6 +68,7 @@ function coinPlugin(cryptoCode: string) {
   const type = coin.type ?? 'coin'
   switch (type) {
     case 'erc-20':
+      if (coin.cryptoCode == 'WLD') return PLUGINS['WLD']
       return PLUGINS['ETH']
     case 'trc-20':
       return PLUGINS['TRX']
