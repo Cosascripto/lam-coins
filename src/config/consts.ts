@@ -11,6 +11,7 @@ export enum CryptoCode {
   USDT_TRON = 'USDT_TRON',
   LN = 'LN',
   WLD = 'WLD',
+  BLACKPAY = 'BLACKPAY',
 }
 
 export const COINS = CryptoCode /* Keep COINS for backwards compat */
@@ -263,6 +264,21 @@ const CRYPTOS = [
       mili: {
         displayScale: 5,
         displayCode: 'mBTC'
+      }
+    }
+  },
+  {
+    cryptoCode: CryptoCode.BLACKPAY,
+    display: 'Blackpay',
+    code: 'blackpay',
+    configFile: 'blackpay.conf',
+    unitScale: 2,
+    zeroConf: true,
+    type: 'wallet',
+    units:{
+      full: {
+        displayScale: 2,
+        displayCode: 'Blackpay'
       }
     }
   },
