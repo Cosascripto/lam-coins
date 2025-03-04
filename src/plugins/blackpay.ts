@@ -2,7 +2,7 @@
 
 import url from 'url'
 
-1   import { CryptoPlugin } from './plugin'
+import { CryptoPlugin } from './plugin'
 
 class Blackpay implements CryptoPlugin {
   base58Opts = {
