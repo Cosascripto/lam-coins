@@ -15,8 +15,10 @@ import TRX from './plugins/trx'
 import LN from './plugins/ln'
 import WLD from './plugins/wld'
 import BLACKPAY from './plugins/blackpay'
+import ZANO from './plugins/zano'
+import FUSD from './plugins/fusd'
 
-const PLUGINS: { [key: string]: any } = {BTC, ETH, ZEC, LTC, DASH, BCH, XMR, TRX, LN, WLD, BLACKPAY}
+const PLUGINS: { [key: string]: any } = {BTC, ETH, ZEC, LTC, DASH, BCH, XMR, TRX, LN, WLD, BLACKPAY, ZANO, FUSD}
 
 export function cryptoCurrencies() {
   return CRYPTO_CURRENCIES

@@ -12,6 +12,8 @@ export enum CryptoCode {
   LN = 'LN',
   WLD = 'WLD',
   BLACKPAY = 'BLACKPAY',
+  ZANO = 'ZANO',
+  FUSD = 'FUSD',
 }
 
 export const COINS = CryptoCode /* Keep COINS for backwards compat */
@@ -279,6 +281,41 @@ const CRYPTOS = [
       full: {
         displayScale: 2,
         displayCode: 'Blackpay'
+      }
+    }
+  },
+  {
+    cryptoCode: CryptoCode.ZANO,
+    display: 'Zano',
+    code: 'zano',
+    configFile: 'zano.conf',
+    daemon: 'zanod',
+    defaultPort: 11211,
+    unitScale: 12,
+    zeroConf: true,
+    type: 'coin',
+    units:{
+      full: {
+        displayScale: 12,
+        displayCode: 'ZANO'
+      },
+      mili: {
+        displayScale: 9,
+        displayCode: 'mZANO'
+      }
+    }
+  },
+  {
+    cryptoCode: CryptoCode.FUSD,
+    display: 'fUSD',
+    code: 'fusd',
+    unitScale: 4,
+    zeroConf: false,
+    type: 'coin',
+    units:{
+      full: {
+        displayScale: 4,
+        displayCode: 'fUSD'
       }
     }
   },
