@@ -49,4 +49,4 @@ class ZANO implements CryptoPlugin {
   }
 }
 
-export default ZANO;
+export default new ZANO();

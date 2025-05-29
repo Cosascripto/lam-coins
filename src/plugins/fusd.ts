@@ -49,4 +49,4 @@ class FUSD implements CryptoPlugin {
   }
 }
 
-export default FUSD;
+export default new FUSD();
