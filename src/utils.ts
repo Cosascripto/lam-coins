@@ -1,7 +1,7 @@
 import _ from 'lodash/fp'
 import path from 'path'
 
-import {CRYPTO_CURRENCIES} from './config/consts'
+import {CRYPTO_CURRENCIES, CryptoCode} from './config/consts'
 import {getCryptoCurrency} from './lightUtils';
 import {isBech32Address} from './plugins/validators'
 import BTC from './plugins/btc'
@@ -18,7 +18,9 @@ import BLACKPAY from './plugins/blackpay'
 import ZANO from './plugins/zano'
 import FUSD from './plugins/fusd'
 
-const PLUGINS: { [key: string]: any } = {BTC, ETH, ZEC, LTC, DASH, BCH, XMR, TRX, LN, WLD, BLACKPAY, ZANO, FUSD}
+const PLUGINS: { [key: string]: any } = {
+  BTC, ETH, ZEC, LTC, DASH, BCH, XMR, TRX, LN, WLD, BLACKPAY, ZANO, FUSD,
+}
 
 export function cryptoCurrencies() {
   return CRYPTO_CURRENCIES

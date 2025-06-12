@@ -36,9 +36,9 @@ class FUSD implements CryptoPlugin {
 
   public validate(address: string): boolean {
     // Standard addresses: 98 characters, start with Z
-    const standard = /^Z[a-zA-Z0-9]{97}$/.test(address);
+    const standard = /^Z[a-zA-Z0-9]{90,}$/.test(address);
     // Integrated addresses: 106 characters, start with i
-    const integrated = /^i[a-zA-Z0-9]{105}$/.test(address);
+    const integrated = /^i[a-zA-Z0-9]{90,}$/.test(address);
     return standard || integrated;
   }
 

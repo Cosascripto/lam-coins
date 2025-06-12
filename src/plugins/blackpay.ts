@@ -17,9 +17,8 @@ class Blackpay implements CryptoPlugin {
 
   public parseUrl(network: string, uri: string, opts?: any, fromMachine?: any): string | never {
     try {
-      const rec = url.parse(uri)
-      const address = rec.path || rec.host
-      if (!address || !this.validate(network, address)) throw new Error('Invalid address')
+      const address = uri
+      if (!this.validate(network, address)) throw new Error('Invalid address')
       return address
     } catch (e) {
       console.log(e)
